@@ -5,6 +5,8 @@ Website for Mourne Archery Centre
 
 * Bootstrap
   * Nav bar
-  * Jumbotron
+  * Hero image 
 
 * Jquery
+
+* CSS
