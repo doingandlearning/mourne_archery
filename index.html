@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+<body data-spy="scroll" data-target="#aNavBar" data-offset="70">
+    <nav id="aNavBar" class="navbar navbar-toggleable-md navbar-light  fixed-top">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -17,12 +17,12 @@
         <a class="collapse navbar-collapse" href="#"><img src="assets/logo_small.png"width=60px height=50px></a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                 <li><a class="nav-link" href="#about">About</a></li>
-                 <li><a class="nav-link" href="#involved">Getting involved</a></li>
-                 <li><a class="nav-link" href="#special">Special events</a></li>
-                 <li><a class="nav-link" href="#contact">Contact us</a></li>
-                 <li><a class="nav-link" href="#find">Finding us</a></li>
+            <ul class="nav-pills nav" id="navlinks">
+                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                 <li class="nav-item"><a class="nav-link" href="#involved">Getting involved</a></li>
+                 <li class="nav-item"><a class="nav-link" href="#special">Special events</a></li>
+                 <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li>
+                 <li class="nav-item"><a class="nav-link" href="#find">Finding us</a></li>
             </ul>
         </div>
     </nav>
@@ -35,35 +35,30 @@
         </div>
 
     <section id="about">
-        <a id="about">
             <p>Text about</p>
-    </a></section>
+    </section>
 
     <section id="involved">
-        <a id="involved">
             <p>Text about being involved</p>
-    </a></section>
+    </section>
 
     <section id="special">
-        <a id="special">
             <p>Text about special events</p>
-        </a></section>
+    </section>
 
     <section id="contact">
-        <a id="contact">
             <p>Text about contact</p>
-    </a></section>
+    </section>
 
     <section id="find">
-        <a id="find">
             <p>Text about finding</p>
-    </a></section>
-
+    </section>
     <footer>
 
     </footer>
-</body>
 <script src="js/jquery-3.2.1.js"></script>
 <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-<script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js">
+<script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
+
+</body>
 </html>
