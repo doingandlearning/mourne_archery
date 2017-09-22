@@ -55,3 +55,9 @@ section{
         padding:100px;
         height: 900px;
 }
+.col-md-4 {
+        padding:50px;
+}
+#about{
+        background-color:rgba(12,100,12,0.8);
+}
