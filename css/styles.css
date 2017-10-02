@@ -1,5 +1,7 @@
     body {
         position: relative;
+        background-image: url('assets/tile.png');
+        background-repeat: repeat;
     }
     /* nav bar styling */
     
@@ -62,7 +64,7 @@
         top: 90%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.9);
         color: #3a5528;
         padding: 0 30px;
     }
@@ -83,11 +85,11 @@
     /* specific styling for given sections */
     
     #about {
-        background-color: rgba(132, 163, 92, 0.33);
+        background-color: rgba(132, 163, 92, 0.9);
     }
     
     #involved {
-        background-color: rgba(13, 251, 255, 0.33);
+        background-color: rgba(13, 251, 255, 0.9);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -99,15 +101,15 @@
     }
     
     #special {
-        background-color: rgba(132, 163, 92, 0.33);
+        background-color: rgba(132, 163, 92, 0.9);
     }
     
     #contact {
-        background-color: rgba(13, 251, 255, 0.33);
+        background-color: rgba(13, 251, 255, 0.9);
     }
     
     #find {
-        background-color: rgba(132, 163, 92, 0.33);
+        background-color: rgba(132, 163, 92, 0.9);
     }
     
     .seperator {
