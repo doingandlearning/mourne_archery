@@ -7,7 +7,8 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY2NfjyobJ7HL3IxfE-zE5ujnsvifl0yg&callback=initMap" type="text/javascript"></script>
+
+  
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -139,9 +140,8 @@
                         </tr>
                     </table>
                 </div>
-            </div>
-            <div class="col col-md-6">
-                <p>We only charge £10 per person.</p>
+                <img src="assets/whatson.JPG" width="360px" align="middle">
+                <p>We only charge <em>£10</em> per person.</p>
                 <p>For that you get:</p>
                 <ul>
                     <li>3 hours of fun (shorter if required)</li>
@@ -152,7 +152,11 @@
                     <li>Complimentary refreshments</li>
                     <li>Group discount available</li>
                 </ul>
-                <img src="assets/whatson.JPG" width="360px" align="middle">
+            </div>
+ 
+            <div class="col col-md-6">
+
+               
             </div>
         </div>
     </section>
@@ -163,8 +167,7 @@
     </div>
 
     <section id="special" class="container">
-        <p>Text about special events</p>
-    </section>
+        <p><strong>We have experience running events for everything from corporate days, charity fundraisers and birthday parties.  If you'd like to organise a special event please get in touch with the form the below and we'll be in touch to explore possibilities.</strong></p>    </section>
 
     <div class="seperator container">
         <q>I spent my Easter Monday at Mourne Archery Centre and I loved it. The centre is run by a lovely woman called Katy, who immediately makes you feel at ease with her wit and patience. The activity includes three hours of fun, learning how to shoot as well as taking part in tournaments plus there are tea and biscuits to enjoy. The perfect activity for people of all ages, I would definitely recommend the Mourne Archery Centre for something a bit different.</q><br>Bronagh,
@@ -175,6 +178,7 @@
         <div class="row">
             <div class="col col-md-6">
                 <h1>Get in touch!</h1>
+                <h3>We aim to get back to you within 24 hours</h3>
                 <script type="text/javascript">
                     (function a(d, w, u) {
                         var h = d.getElementsByTagName("head")[0];
@@ -195,7 +199,26 @@
                 </script><iframe id="formio-form-59cdff70f3c96d0008557b04" style="width:100%;border:none;" height="600px" src="https://formview.io/#/uazlpdlkzrbcwiv/user/register?iframe=1&header=0"></iframe>
             </div>
             <div class="col col-md-6">
-
+                <h1>Pay deposit</h1>
+                <p>If we've chatted with you and booked you in, we'd appreciate you paying for your time with us here.  This is hopefully more convenient for you and means that I don't have to keep money on the premises which I often close up on my own.</p>
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="Y98FNAYDDVRD8">
+                    <table>
+                    <tr><td><input type="hidden" name="on0" value="Deposit">Deposit</td></tr><tr><td><select name="os0">
+                        <option value="1 person">1 person £10.00 GBP</option>
+                        <option value="2 people">2 people £20.00 GBP</option>
+                        <option value="3 people">3 people £30.00 GBP</option>
+                        <option value="4 people">4 people £40.00 GBP</option>
+                        <option value="5 people">5 people £50.00 GBP</option>
+                        <option value="6 people">6 people £60.00 GBP</option>
+                    </select> </td></tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="GBP">
+                    <input type="image" src="/PayPal-PayNow-Button.png" border="0" name="submit" width="220px" alt="PayPal – The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                     
             </div>
     </section>
 
@@ -227,6 +250,17 @@
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 54.2401296, lng: -5.9003798},
+            zoom: 15
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY2NfjyobJ7HL3IxfE-zE5ujnsvifl0yg&callback=initMap"
+      async defer></script>
 
 </body>
 

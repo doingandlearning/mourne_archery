@@ -1184,8 +1184,8 @@ setDocument = Sizzle.setDocument = function( node ) {
 		Expr.filter["ID"] =  function( id ) {
 			var attrId = id.replace( runescape, funescape );
 			return function( elem ) {
-				var node = typeof elem.getAttributeNode !== "undefined" &&
-					elem.getAttributeNode("id");
+				var node = typeof elem.getAttribute !== "undefined" &&
+					elem.getAttribute("id");
 				return node && node.value === attrId;
 			};
 		};
@@ -1200,7 +1200,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 				if ( elem ) {
 
 					// Verify the id attribute
-					node = elem.getAttributeNode("id");
+					node = elem.getAttribute("id");
 					if ( node && node.value === id ) {
 						return [ elem ];
 					}
@@ -1209,7 +1209,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 					elems = context.getElementsByName( id );
 					i = 0;
 					while ( (elem = elems[i++]) ) {
-						node = elem.getAttributeNode("id");
+						node = elem.getAttribute("id");
 						if ( node && node.value === id ) {
 							return [ elem ];
 						}
@@ -1567,7 +1567,7 @@ Sizzle.attr = function( elem, name ) {
 		val :
 		support.attributes || !documentIsHTML ?
 			elem.getAttribute( name ) :
-			(val = elem.getAttributeNode(name)) && val.specified ?
+			(val = elem.getAttribute(name)) && val.specified ?
 				val.value :
 				null;
 };
@@ -2771,7 +2771,7 @@ if ( !support.attributes || !assert(function( el ) {
 }
 
 // Support: IE<9
-// Use getAttributeNode to fetch booleans when getAttribute lies
+// Use getAttribute to fetch booleans when getAttribute lies
 if ( !assert(function( el ) {
 	return el.getAttribute("disabled") == null;
 }) ) {
@@ -2779,7 +2779,7 @@ if ( !assert(function( el ) {
 		var val;
 		if ( !isXML ) {
 			return elem[ name ] === true ? name.toLowerCase() :
-					(val = elem.getAttributeNode( name )) && val.specified ?
+					(val = elem.getAttribute( name )) && val.specified ?
 					val.value :
 				null;
 		}

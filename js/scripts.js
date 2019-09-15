@@ -1,25 +1,48 @@
-function initMap() {
-    var uluru = { lat: 54.2401296, lng: -5.9003798 };
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        center: uluru
-    });
-    var marker = new google.maps.Marker({
-        position: uluru,
-        map: map
-    });
-}
+/* 
+ Created on : Jul 4, 2017, 12:43:10 AM
+ Author     : Atta-Ur-Rehman Shah (http://attacomsian.com)
+ */
+$(function () {
+    //init 
+    init();
+    //init wow effects
+    new WOW().init();
 
-/*function offsetAnchor() {
-    if(location.hash.length !== 0) {
-        window.scrollTo(window.scrollX, window.scrollY - 100);
+    //scroll menu
+    $(window).scroll(function () {
+        init();
+    });
+
+    //page scroll
+    $('a.page-scroll').bind('click', function (event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top - 50
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+    //init function
+    function init() {
+        var secondFeature = $('#features').offset().top;
+        var scroll = $(window).scrollTop();
+        if (scroll >= 150) {
+            $('.sticky-navigation').css({"background-color": '#d81b60'});
+        } else {
+            $('.sticky-navigation').css({"background-color": 'transparent'});
+        }
+        if (scroll >= secondFeature - 200) {
+            $(".mobileScreen").css({'background-position': 'center top'});
+        }
+        return false;
     }
-}
+});
 
-// This will capture hash changes while on the page
-window.addEventListener("hashchange", offsetAnchor);
+$(document).ready(function() {
+    //carousel options
+    $('#quote-carousel').carousel({
+      pause: true, interval: 20000,
+    });
+  });
 
-// This is here so that when you enter the page with a hash,
-// it can provide the offset in that case too. Having a timeout
-// seems necessary to allow the browser to jump to the anchor first.
-window.setTimeout(offsetAnchor, 1);*/
+  
