@@ -292,7 +292,7 @@ body {
 /* styling for top banner */
 
 .hero-image {
-    background-image: url("assets/hero.jpg");
+    background-image: url("https://res.cloudinary.com/kc-cloud/image/upload/v1595093560/hero_eb22jc.jpg");
     width: 1000px;
     height: 750px;
     margin: 0 auto;
@@ -581,4 +581,14 @@ footer {
     text: white !important;
     text-align: right;
 }
->>>>>>>ae392b34291d71bf871acfd20795936021bc89cb
+
+.message{
+  background-color: pink;
+  margin-bottom: 10px;
+}
+
+.message-header {
+  text-align:  center;
+  font-weight: 900;
+  text-decoration: underline;
+}

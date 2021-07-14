@@ -1,267 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8">
     <title>Mourne Archery Centre</title>
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.5.1/tailwind.min.css"/>
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+  </head>
 
-  
-</head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="60">
-
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
-              </button>
-                <a class="navbar-brand" href="#" id="logo"><img src="assets/logo_small.png" width=60px height=50px></a>
-                <a class="navbar-brand" href="#">Mourne Archery Centre</a>
+  <body data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="bg-white shadow">
+      <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex px-2 lg:px-0">
+            <div class="flex-shrink-0 flex items-center">
+              <img class="block lg:hidden h-8 w-auto" src="https://res.cloudinary.com/kc-cloud/image/upload/v1595093500/logo_small_zyrzlr.png" alt="mourne archery logo">
+              <img class="hidden lg:block h-8 w-auto" src="https://res.cloudinary.com/kc-cloud/image/upload/v1595093500/logo_small_zyrzlr.png" alt="mourne archery logo">
             </div>
-            <div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#involved">Getting involved</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#special">Special events</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#find">Finding us</a></li>
-                    </ul>
-                </div>
+            <div class="hidden lg:ml-6 lg:flex">
+              <a  href="#about" class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">About</a>
+              <a  href="#involved" class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">Getting involved</a>
+              <a  href="#special" class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">Special events</a>
+              <a  href="#contact" class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">Contact us</a>
+              <a class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out" href="#find">Finding us</a>
             </div>
+          </div>
+
+          <div class="flex items-center lg:hidden">
+            <!-- Mobile menu button -->
+            <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="main menu" aria-expanded="false">
+              <!-- Icon when menu is closed. -->
+              <!-- Menu open: "hidden", Menu closed: "block" -->
+              <svg class="block h-6 w-6" fill="none" viewbox="0 0 24 24" stroke="currentcolor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 6h16m4 12h16m4 18h16"/>
+              </svg>
+              <!-- Icon when menu is open. -->
+              <!-- Menu open: "block", Menu closed: "hidden" -->
+              <svg class="hidden h-6 w-6" fill="none" viewbox="0 0 24 24" stroke="currentcolor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 18l18 6m6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+
         </div>
+      </div>
     </nav>
 
-
-
-
     <div class="hero-image">
-        <div class="hero-text">
-            <h1>Mourne Archery Centre</h1>
-            <h2>Welcoming, safe and fun</h2>
-        </div>
+      <div class="hero-text">
+        <h1>Mourne Archery Centre</h1>
+        <h2>Welcoming, safe and fun</h2>
+      </div>
     </div>
 
     <div class="seperator container">
-        <q>Fantastic fun day out for the whole family. Katy and Mick are brilliant giving basic understandable instructions for first timers and technique advice as you improve. Having never shot an arrow before my first visit I left total impressed with how many arrows were hitting the target thanks to Katy. I have booked sessions for my husband and myself, and for groups of 15 aged from 5 years and up. Katy is great at keeping it interesting making sure even in a large group of mixed experience everyone is challenged and the time flys in. Looking forward to my next visit</q><br>Donna,
+      <q>Fantastic fun day out for the whole family. Katy and Mick are brilliant giving basic understandable instructions for first timers and technique advice as you improve. Having never shot an arrow before my first visit I left total impressed with how many arrows were hitting the target thanks to Katy. I have booked sessions for my husband and myself, and for groups of 15 aged from 5 years and up. Katy is great at keeping it interesting making sure even in a large group of mixed experience everyone is challenged and the time flys in. Looking forward to my next visit</q><br>Donna,
         July 2017
     </div>
 
     <section id="about" class="container">
-        <div class="row">
-            <div class="col col-md-4">
-                <img src="assets/katy.png" width="200px" height="200px" />
-            </div>
-            <div class="col col-md-8">
-                <span>
-                    <p>Hiya, I'm Katy! I started Mourne Archery Centre in 2009 because I wanted to provide a service to my local community and I knew archery would be a great way to do that. I am passionate about keeping our sport accessible and affordable,
+      <div class="row">
+        <div class="col col-md-4">
+          <img src="https://res.cloudinary.com/kc-cloud/image/upload/v1595093595/katy_oksnbu.png" width="200px" height="200px"/>
+        </div>
+        <div class="col col-md-8">
+          <span>
+            <p>Hiya, I'm Katy! I started Mourne Archery Centre in 2009 because I wanted to provide a service to my local community and I knew archery would be a great way to do that. I am passionate about keeping our sport accessible and affordable,
                         about providing a space for kids and adults to learn new skills and meet new people.  I'd love to have you down to the barn so I could show how we build community and have a lot of fun in the process.</p>
-                    </span>
-            </div>
+          </span>
         </div>
-        <div class="row">
-            <div class="col col-md-8">
-                <span><p>The centre is based in a barn in the middle of Maghera, Co. Down - really close to Newcastle.  Our normal sessions run for 3 hours with a variety of fun games ranging from traditional target shooting to popping balloons.  We can have 15 shooters on the line at any one point and for larger groups we can take turns.</p></span>
-            </div>
-            <div class="col col-md-4">
-                <img src="assets/barn.png" width="250px" />
-            </div>
+      </div>
+      <div class="row">
+        <div class="col col-md-8">
+          <span>
+            <p>The centre is based in a barn in the middle of Maghera, Co. Down - really close to Newcastle.  Our normal sessions run for 3 hours with a variety of fun games ranging from traditional target shooting to popping balloons.  We can have 15 shooters on the line at any one point and for larger groups we can take turns.</p>
+          </span>
         </div>
-        <div class="row">
-            <div class="col col-md-4">
-                <img src="assets/members.jpg" width="250px" />
-            </div>
-            <div class="col col-md-8">
-                <span><p>As well as providing a venue for one-off events, we also have an active and committed membership.  We have dedicated nights for our members for competition, socialising and skill building.  Members also get better rates when they are booking for their families and friends.</p></span>
-            </div>
+        <div class="col col-md-4">
+          <img src="https://res.cloudinary.com/kc-cloud/image/upload/v1595093611/barn_hqa1ns.png" width="250px"/>
         </div>
+      </div>
+      <div class="row">
+        <div class="col col-md-4">
+          <img src="https://res.cloudinary.com/kc-cloud/image/upload/v1595093627/members_xvonsw.jpg" width="250px"/>
+        </div>
+        <div class="col col-md-8">
+          <span>
+            <p>As well as providing a venue for one-off events, we also have an active and committed membership.  We have dedicated nights for our members for competition, socialising and skill building.  Members also get better rates when they are booking for their families and friends.</p>
+          </span>
+        </div>
+      </div>
     </section>
 
     <div class="seperator container">
-        <q>Really can't rate this place highly enough. 
+      <q>Really can't rate this place highly enough. 
     Five adults and a rather excited wee dog dropped by for a bit of fun, and boy we weren't disappointed. Katy and her Dad Michael were absolutely superb. From instructions and tips and some great games, it was 3 hours of brilliant fun. The competitive streak in me never appeared once :) Seriously ? We couldn't contain ourselves. 
     Brendan kept our wee terrier entertained while we cracked on with the serious business of beating each other. A cup of coffee and a few biscuits in between games made for a great afternoon's craic.
-    Will we be back ? With bells on </q> <br>Davy, May 2017
+    Will we be back ? With bells on </q>
+      <br>Davy, May 2017
     </div>
 
     <section id="involved" class="container">
-        <div class="row">
-            <div class="col col-md-6">
-                <h1> What's on?</h1>
+      <div class="row">
+        <div class="col col-md-6">
+          <h1> What's on?</h1>
                 All sessions are booked in advance - these are the time slots that are normally available.
                 <div class="tg-wrap">
-                    <table class="tg">
-                        <tr>
-                            <th class="tg-hdb8">Monday:</th>
-                            <th class="tg-hdb8">10.30-1.30</th>
-                            <th class="tg-hdb8">2.00-5.00</th>
-                            <th class="tg-hdb8">5.30-8.30</th>
-                        </tr>
-                        <tr>
-                            <td class="tg-hdb8">Tuesday:</td>
-                            <td class="tg-hdb8">10.30-1.30</td>
-                            <td class="tg-hdb8">2.00-5.00</td>
-                            <td class="tg-hdb8">5.30-8.30</td>
-                        </tr>
-                        <tr>
-                            <td class="tg-hdb8">Wednesday:</td>
-                            <td class="tg-hdb8">10.30-1.30</td>
-                            <td class="tg-hdb8">2.00-5.00</td>
-                            <td class="tg-hdb8"></td>
-                        </tr>
-                        <tr>
-                            <td class="tg-hdb8">Thursday:</td>
-                            <td class="tg-hdb8">10.30-1.30</td>
-                            <td class="tg-hdb8">2.00-5.00</td>
-                            <td class="tg-hdb8">5.30-8.30</td>
-                        </tr>
-                        <tr>
-                            <td class="tg-hdb8">Friday:</td>
-                            <td class="tg-hdb8">10.30-1.30</td>
-                            <td class="tg-hdb8">2.00-5.00</td>
-                            <td class="tg-hdb8"></td>
-                        </tr>
-                        <tr>
-                            <td class="tg-hdb8">Saturday:</td>
-                            <td class="tg-hdb8">10.30-1.30</td>
-                            <td class="tg-hdb8">2.00-5.00</td>
-                            <td class="tg-hdb8">5.30-8.30</td>
-                        </tr>
-                        <tr>
-                            <td class="tg-hdb8">Sunday:</td>
-                            <td class="tg-hdb8"></td>
-                            <td class="tg-hdb8">2.00-5.00</td>
-                            <td class="tg-hdb8"></td>
-                        </tr>
-                    </table>
-                </div>
-                <img src="assets/whatson.JPG" width="360px" align="middle">
-                <p>We only charge <em>£10</em> per person.</p>
-                <p>For that you get:</p>
-                <ul>
-                    <li>3 hours of fun (shorter if required)</li>
-                    <li>3 seperate activities</li>
-                    <li>All training included</li>
-                    <li>All equipment supplied</li>
-                    <li>Suitable for the whole family</li>
-                    <li>Complimentary refreshments</li>
-                    <li>Group discount available</li>
-                </ul>
-            </div>
- 
-            <div class="col col-md-6">
-
-               
-            </div>
+            <table class="tg">
+              <tr>
+                <th class="tg-hdb8">Monday:</th>
+                <th class="tg-hdb8">10.30-1.30</th>
+                <th class="tg-hdb8">2.00-5.00</th>
+                <th class="tg-hdb8">5.30-8.30</th>
+              </tr>
+              <tr>
+                <td class="tg-hdb8">Tuesday:</td>
+                <td class="tg-hdb8">10.30-1.30</td>
+                <td class="tg-hdb8">2.00-5.00</td>
+                <td class="tg-hdb8">5.30-8.30</td>
+              </tr>
+              <tr>
+                <td class="tg-hdb8">Wednesday:</td>
+                <td class="tg-hdb8">10.30-1.30</td>
+                <td class="tg-hdb8">2.00-5.00</td>
+                <td class="tg-hdb8"></td>
+              </tr>
+              <tr>
+                <td class="tg-hdb8">Thursday:</td>
+                <td class="tg-hdb8">10.30-1.30</td>
+                <td class="tg-hdb8">2.00-5.00</td>
+                <td class="tg-hdb8">5.30-8.30</td>
+              </tr>
+              <tr>
+                <td class="tg-hdb8">Friday:</td>
+                <td class="tg-hdb8">10.30-1.30</td>
+                <td class="tg-hdb8">2.00-5.00</td>
+                <td class="tg-hdb8"></td>
+              </tr>
+              <tr>
+                <td class="tg-hdb8">Saturday:</td>
+                <td class="tg-hdb8">10.30-1.30</td>
+                <td class="tg-hdb8">2.00-5.00</td>
+                <td class="tg-hdb8">5.30-8.30</td>
+              </tr>
+              <tr>
+                <td class="tg-hdb8">Sunday:</td>
+                <td class="tg-hdb8"></td>
+                <td class="tg-hdb8">2.00-5.00</td>
+                <td class="tg-hdb8"></td>
+              </tr>
+            </table>
+          </div>
+          <img src="https://res.cloudinary.com/kc-cloud/image/upload/v1595091937/whatson_w85hx7.jpg" width="360px" align="middle">
+          <p>We only charge <em>£10</em> per person.</p>
+          <p>For that you get:</p>
+          <ul>
+            <li>3 hours of fun (shorter if required)</li>
+            <li>3 seperate activities</li>
+            <li>All training included</li>
+            <li>All equipment supplied</li>
+            <li>Suitable for the whole family</li>
+            <li>Complimentary refreshments</li>
+            <li>Group discount available</li>
+          </ul>
         </div>
+
+        <div class="col col-md-6"></div>
+      </div>
     </section>
     <div class="seperator container">
-        <q>
+      <q>
     I can honestly say that every time that we visit we are treated like royalty. Nothing is ever a problem and Katy and her team are professional at all times. We visited yesterday for my sons 14th birthday. Katy accommodated us at short notice and the kids and adult had a great time. Can I thank her son for his great company while I sat and watched. Hopefully we will see you again soon :)</q><br>Julie,
         August 2017
     </div>
 
     <section id="special" class="container">
-        <p><strong>We have experience running events for everything from corporate days, charity fundraisers and birthday parties.  If you'd like to organise a special event please get in touch with the form the below and we'll be in touch to explore possibilities.</strong></p>    </section>
+      <p>
+        <strong>We have experience running events for everything from corporate days, charity fundraisers and birthday parties.  If you'd like to organise a special event please get in touch with the form the below and we'll be in touch to explore possibilities.</strong>
+      </p>
+    </section>
 
     <div class="seperator container">
-        <q>I spent my Easter Monday at Mourne Archery Centre and I loved it. The centre is run by a lovely woman called Katy, who immediately makes you feel at ease with her wit and patience. The activity includes three hours of fun, learning how to shoot as well as taking part in tournaments plus there are tea and biscuits to enjoy. The perfect activity for people of all ages, I would definitely recommend the Mourne Archery Centre for something a bit different.</q><br>Bronagh,
+      <q>I spent my Easter Monday at Mourne Archery Centre and I loved it. The centre is run by a lovely woman called Katy, who immediately makes you feel at ease with her wit and patience. The activity includes three hours of fun, learning how to shoot as well as taking part in tournaments plus there are tea and biscuits to enjoy. The perfect activity for people of all ages, I would definitely recommend the Mourne Archery Centre for something a bit different.</q><br>Bronagh,
         April 2017
     </div>
 
-    <section id="contact" class="container">
-        <div class="row">
-            <div class="col col-md-6">
-                <h1>Get in touch!</h1>
-                <h3>We aim to get back to you within 24 hours</h3>
-                <script type="text/javascript">
-                    (function a(d, w, u) {
-                        var h = d.getElementsByTagName("head")[0];
-                        var s = d.createElement("script");
-                        s.type = "text/javascript";
-                        s.src = "https://portal.form.io/lib/seamless/seamless.parent.min.js";
-                        s.onload = function b() {
-                            var f = d.getElementById("formio-form-59cdff70f3c96d0008557b04");
-                            if (!f || (typeof w.seamless === u)) {
-                                return setTimeout(b, 100);
-                            }
-                            w.seamless(f, {
-                                fallback: false
-                            }).receive(function(d, e) {});
-                        };
-                        h.appendChild(s);
-                    })(document, window);
-                </script><iframe id="formio-form-59cdff70f3c96d0008557b04" style="width:100%;border:none;" height="600px" src="https://formview.io/#/uazlpdlkzrbcwiv/user/register?iframe=1&header=0"></iframe>
-            </div>
-            <div class="col col-md-6">
-                <h1>Pay deposit</h1>
-                <p>If we've chatted with you and booked you in, we'd appreciate you paying for your time with us here.  This is hopefully more convenient for you and means that I don't have to keep money on the premises which I often close up on my own.</p>
-                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="Y98FNAYDDVRD8">
-                    <table>
-                    <tr><td><input type="hidden" name="on0" value="Deposit">Deposit</td></tr><tr><td><select name="os0">
-                        <option value="1 person">1 person £10.00 GBP</option>
-                        <option value="2 people">2 people £20.00 GBP</option>
-                        <option value="3 people">3 people £30.00 GBP</option>
-                        <option value="4 people">4 people £40.00 GBP</option>
-                        <option value="5 people">5 people £50.00 GBP</option>
-                        <option value="6 people">6 people £60.00 GBP</option>
-                    </select> </td></tr>
-                    </table>
-                    <input type="hidden" name="currency_code" value="GBP">
-                    <input type="image" src="/PayPal-PayNow-Button.png" border="0" name="submit" width="220px" alt="PayPal – The safer, easier way to pay online!">
-                    <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-                    </form>
-                     
-            </div>
+    <section class="container message">
+      <h2 class="message-header">Covid-19 Update</h2>
+      <p>We are really excited to be able to start offering sessions again from the start of August - we don't have a firm date but we are working on it. We've missed you! </p>
+      <p>Obviously, we are really concerned to keep everyone as safe as possible. We will provide hand-sanitiser, clean our bows and surfaces between sessions and ask that you respect social distancing rules. Don't worry there is plenty of room in the barn!</p>
+      <p>We are going to have to limit groups to 6 and offer a shorter time shooting to leave time for cleaning and preparation. Sadly we won't be able to offer tea and coffee at the moment, so please bring your own drinks. </p>
+      <p>Initially, we can only offer sessions to over 12s but are working to change this as soon as possible.</p>
+      <p>Stay safe and see you soon!</p>
     </section>
 
-    <div class="seperator container">
+    <section id="contact" class="container">
+      <div class="row">
+        <div class="col col-md-6">
+          <h1>Get in touch!</h1>
+          <h3>We aim to get back to you within 24 hours</h3>
+          <script type="text/javascript">
+            (function a(d, w, u) {
+              var h = d.getElementsByTagName("head")[0];
+              var s = d.createElement("script");
+              s.type = "text/javascript";
+              s.src = "https://portal.form.io/lib/seamless/seamless.parent.min.js";
+              s.onload = function b() {
+                var f = d.getElementById("formio-form-59cdff70f3c96d0008557b04");
+                if (!f || (typeof w.seamless === u)) {
+                  return setTimeout(b, 100);
+                }
+                w
+                  .seamless(f, {fallback: false})
+                  .receive(function (d, e) {});
+              };
+              h.appendChild(s);
+            })(document, window);
+          </script>
+          <iframe id="formio-form-59cdff70f3c96d0008557b04" style="width:100%;border:none;" height="600px" src="https://formview.io/#/uazlpdlkzrbcwiv/user/register?iframe=1&header=0"></iframe>
+        </div>
+        <div class="col col-md-6">
+          <h1>Pay deposit</h1>
+          <p>If we've chatted with you and booked you in, we'd appreciate you paying for your time with us here.  This is hopefully more convenient for you and means that I don't have to keep money on the premises which I often close up on my own.</p>
+          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="y98fnayddvrd8">
+            <table>
+              <tr>
+                <td><input type="hidden" name="on0" value="deposit">Deposit</td>
+              </tr>
+              <tr>
+                <td>
+                  <select name="os0">
+                    <option value="1 person">1 person £10.00 GBP</option>
+                    <option value="2 people">2 people £20.00 GBP</option>
+                    <option value="3 people">3 people £30.00 GBP</option>
+                    <option value="4 people">4 people £40.00 GBP</option>
+                    <option value="5 people">5 people £50.00 GBP</option>
+                    <option value="6 people">6 people £60.00 GBP</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+            <input type="hidden" name="currency_code" value="gbp">
+            <input type="image" src="/paypal-paynow-button.png" border="0" name="submit" width="220px" alt="paypal – the safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_gb/i/scr/pixel.gif" width="1" height="1">
+          </form>
+
+        </div>
+      </section>
+
+      <div class="seperator container">
         <q>Brilliant way to spend the day! Katie was so professional and had us shooting straight in no time. Definitely recommend to anyone looking to do a group activity with friends, family or work colleagues.</q><br>Catherine, July 2017
 
     </div>
-    <section id="find" class="container">
+      <section id="find" class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div id="map"></div>
-            </div>
-            <div class="col-md-5">
-                <p>The barn is situated in the heart of Maghera and there is good parking outside.</p>
-                <span id=address>35 Carnacavill Rd,<br>
+          <div class="col-md-6">
+            <div id="map"></div>
+          </div>
+          <div class="col-md-5">
+            <p>The barn is situated in the heart of Maghera and there is good parking outside.</p>
+            <span id=address>35 Carnacavill Rd,<br>
                 BT31 9HD <br>
                 Newcastle,<br> 
                 United Kingdom</span>
-            </div>
+          </div>
         </div>
 
-    </section>
+      </section>
 
-    <footer>
+      <footer>
         Created by Kevin Cunningham
     </footer>
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script>
-        var map;
-        function initMap() {
-          map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 54.2401296, lng: -5.9003798},
-            zoom: 15
-          });
-        }
-      </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY2NfjyobJ7HL3IxfE-zE5ujnsvifl0yg&callback=initMap"
+      <script src="js/scripts.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=aizasybgv5tauztym150kzejodb2zninxjv8ch0&callback=initmap"
       async defer></script>
+    </body>
 
-</body>
-
-</html>
+  </html>
