@@ -109,14 +109,12 @@
     color:#fff;
 }
 
-a:link {
+.link  {
     color: blue;
     text-decoration: underline;
 }
 
-a:visited {
-    color: green;
-}
+
 
 h1 {
     font-family: Geneva, Tahoma, Verdana, sans-serif;
