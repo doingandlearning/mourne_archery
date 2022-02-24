@@ -1,0 +1,24 @@
+{
+  "name": "mourne_archery",
+  "version": "1.0.0",
+  "description": "Website for Mourne Archery Centre",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "tailwindcss -o ./css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doingandlearning/mourne_archery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doingandlearning/mourne_archery/issues"
+  },
+  "homepage": "https://github.com/doingandlearning/mourne_archery#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.4"
+  }
+}

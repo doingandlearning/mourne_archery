@@ -82,19 +82,6 @@
 }
 
 
-.form-style-7 input[type="text"]:focus,
-.form-style-7 input[type="date"]:focus,
-.form-style-7 input[type="datetime"]:focus,
-.form-style-7 input[type="email"]:focus,
-.form-style-7 input[type="number"]:focus,
-.form-style-7 input[type="search"]:focus,
-.form-style-7 input[type="time"]:focus,
-.form-style-7 input[type="url"]:focus,
-.form-style-7 input[type="tel"]:focus,
-.form-style-7 textarea:focus,
-.form-style-7 select:focus
-{
-}
 .form-style-7 li > span{
     background: #F3F3F3;
     display: block;
@@ -121,6 +108,16 @@
     background: #6B9FFF;
     color:#fff;
 }
+
+a:link {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: green;
+}
+
 h1 {
     font-family: Geneva, Tahoma, Verdana, sans-serif;
     font-size: 24px;
@@ -338,23 +335,6 @@ section p {
 
 /* specific styling for given sections */
 
-#involved {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#involved li {
-    list-style-type: none;
-    line-height: 30px;
-}
-
-#special {}
-
-#contact {}
-
-#find {}
-
 #details {
     padding-top: 30px;
     font-size: 18px;
@@ -393,7 +373,6 @@ output {
         background-repeat: repeat;*/
 
 
-}
 
 /* nav bar styling */
 nav {
@@ -467,19 +446,6 @@ section p {
     padding: 15px 0 0 0;
 }
 
-/* specific styling for given sections */
-#involved {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#involved li {
-    list-style-type: none;
-    line-height: 30px;
-}
-#special {}
-#contact {}
-#find {}
 .seperator {
     padding: 25px;
     margin-top: 30px;
@@ -543,7 +509,6 @@ section p {
         -webkit-overflow-scrolling: touch;
     }
     
-    <<<<<<< HEAD
 }
 #address {
     display: flex;
@@ -556,7 +521,7 @@ footer {
     color: white !important;
     text-align: right;
 }
-=======@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .tg {
         width: auto !important;
     }
@@ -578,7 +543,7 @@ footer {
 }
 footer {
     background: #3a5528;
-    text: white !important;
+    color: white !important;
     text-align: right;
 }
 
